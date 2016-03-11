@@ -402,8 +402,7 @@ jQuery(document).ready(function($){
     modal.hide();
   });
 
-
-  $('body').click(function() {
+  $('.close').click(function() {
     modal.hide();
   });
 

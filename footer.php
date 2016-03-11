@@ -47,7 +47,14 @@
 			<span class="close">x</span>
 			<a href="http://www.google.com">
 				<div class="modal-inner">
-			    <p>Some text in the Modal..</p>
+					<div class="modal-inner-primary">
+			    	Become<br/> a driver<br/> in <span>Charleston</span>, WV.
+					</div>
+					<div class="modal-inner-secondary">
+						Link is a <span>West Virginia</span> based company revolutionalizing transportation in the Mountain State and <span>beyond</span>.
+					</div>
+					<div class="modal-inner-image">
+					</div>
 				</div>
 			</a>
 	  </div>

@@ -18,28 +18,93 @@
 
 /* Modal Content/Box */
 .modal-content {
-    width: 400px;
-    margin: 25% auto; /* 15% from the top and centered */
+    width: 420px;
+    margin: 15% auto; /* 15% from the top and centered */
+
+    @include mq($tablet-width, 'max-width') {
+      width: 85%;
+      margin: 45% auto;
+    }
 }
 
 .modal-inner {
-  padding: 20px;
-  border: 3px solid #ffd028;
+  padding: 36px 25px;
+  border: 5px solid $yellow;
   background: white;
   border-radius: 5px;
+  float: left;
+
+  span {
+    color: $teal;
+  }
+
+  &:hover {
+    border: 5px solid $orange;
+    background: $orange;
+
+    .modal-inner-primary {
+      color: white;
+    }
+    .modal-inner-secondary {
+      color: white;
+    }
+
+    span {
+      color: white;
+    }
+
+    .modal-inner-image {
+      background-image: url(img/linkccarwhite.png);
+    }
+  }
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: $orange;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    right: -25px;
+    position: relative;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    opacity: 0.7;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-inner-primary {
+  text-transform: uppercase;
+  color: $orange;
+  font-size: 40px;
+  line-height: 1.2em;
+  margin-bottom: 28px;
+  letter-spacing: 0.04em;
+
+  a {
+
+  }
+}
+
+.modal-inner-secondary {
+  color: $orange;
+  font-size: 11px;
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+  width: 53%;
+  float: left;
+}
+
+
+
+.modal-inner-image {
+  width: 47%;
+  float: left;
+  height: 59px;
+  background-image: url(img/linkccarcolor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }

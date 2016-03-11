@@ -983,34 +983,99 @@ html, body {
 /* Modal Content/Box */
 /* line 20, sass/layout/_modal.scss */
 .modal-content {
-  width: 400px;
-  margin: 25% auto;
+  width: 420px;
+  margin: 15% auto;
   /* 15% from the top and centered */
 }
+@media screen and (max-width: 768px) {
+  /* line 20, sass/layout/_modal.scss */
+  .modal-content {
+    width: 85%;
+    margin: 45% auto;
+  }
+}
 
-/* line 25, sass/layout/_modal.scss */
+/* line 30, sass/layout/_modal.scss */
 .modal-inner {
-  padding: 20px;
-  border: 3px solid #ffd028;
+  padding: 36px 25px;
+  border: 5px solid #f9bf19;
   background: white;
   border-radius: 5px;
+  float: left;
+}
+/* line 37, sass/layout/_modal.scss */
+.modal-inner span {
+  color: #6ec9be;
+}
+/* line 41, sass/layout/_modal.scss */
+.modal-inner:hover {
+  border: 5px solid #ff6b00;
+  background: #ff6b00;
+}
+/* line 45, sass/layout/_modal.scss */
+.modal-inner:hover .modal-inner-primary {
+  color: white;
+}
+/* line 48, sass/layout/_modal.scss */
+.modal-inner:hover .modal-inner-secondary {
+  color: white;
+}
+/* line 52, sass/layout/_modal.scss */
+.modal-inner:hover span {
+  color: white;
+}
+/* line 56, sass/layout/_modal.scss */
+.modal-inner:hover .modal-inner-image {
+  background-image: url(img/linkccarwhite.png);
 }
 
 /* The Close Button */
-/* line 33, sass/layout/_modal.scss */
+/* line 63, sass/layout/_modal.scss */
 .close {
-  color: #aaa;
+  color: #ff6b00;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  right: -25px;
+  position: relative;
 }
 
-/* line 40, sass/layout/_modal.scss */
+/* line 72, sass/layout/_modal.scss */
 .close:hover,
 .close:focus {
-  color: black;
+  opacity: 0.7;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* line 79, sass/layout/_modal.scss */
+.modal-inner-primary {
+  text-transform: uppercase;
+  color: #ff6b00;
+  font-size: 40px;
+  line-height: 1.2em;
+  margin-bottom: 28px;
+  letter-spacing: 0.04em;
+}
+
+/* line 92, sass/layout/_modal.scss */
+.modal-inner-secondary {
+  color: #ff6b00;
+  font-size: 11px;
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+  width: 53%;
+  float: left;
+}
+
+/* line 103, sass/layout/_modal.scss */
+.modal-inner-image {
+  width: 47%;
+  float: left;
+  height: 59px;
+  background-image: url(img/linkccarcolor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* line 2, sass/modules/_menus.scss */
