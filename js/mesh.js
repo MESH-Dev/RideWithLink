@@ -391,9 +391,12 @@ jQuery(document).ready(function($){
 
 
   var modal = $('#myModal');
+  var modalInner = $('.modal-content');
   var span = $(".close");
 
   $(document).ready(function() {
+    modalInner.addClass('animated bounceInDown');
+    modalInner.show();
     modal.show();
   });
 
