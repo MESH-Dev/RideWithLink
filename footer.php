@@ -45,7 +45,7 @@
 	  <!-- Modal content -->
 	  <div class="modal-content">
 			<span class="close">x</span>
-			<a href="http://www.google.com">
+			<a href="https://link.applicantpool.com/jobs/" target="_blank">
 				<div class="modal-inner">
 					<div class="modal-inner-primary">
 			    	Become<br/> a driver<br/> in <span>Charleston</span>, WV.

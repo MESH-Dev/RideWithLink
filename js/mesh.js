@@ -398,9 +398,6 @@ jQuery(document).ready(function($){
   });
 
   // When the user clicks anywhere outside of the modal, close it
-  $('#page').click(function() {
-    modal.hide();
-  });
 
   $('.close').click(function() {
     modal.hide();
