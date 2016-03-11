@@ -395,23 +395,15 @@ jQuery(document).ready(function($){
   var span = $(".close");
 
   $(document).ready(function() {
-
+    modalInner.addClass('animated bounceInDown');
+    modalInner.show();
+    modal.show();
   });
 
   // When the user clicks anywhere outside of the modal, close it
 
   $('.close').click(function() {
     modal.hide();
-  });
-
-  $(document).ready(function() {
-     var referrer =  document.referrer;
-     console.log(referrer);
-     if (referrer.indexOf('linkwv') >= 0) {
-       modalInner.addClass('animated bounceInDown');
-       modalInner.show();
-       modal.show();
-     }
   });
 
 });
