@@ -395,10 +395,18 @@ jQuery(document).ready(function($){
   var span = $(".close");
 
   $(document).ready(function() {
-    modalInner.addClass('animated bounceInDown');
-    modalInner.show();
-    modal.show();
+
+
+    if(window.location.hash) {
+      modalInner.addClass('animated bounceInDown');
+      modalInner.show();
+      modal.show();
+    } else {
+      // Fragment doesn't exist
+    }
   });
+
+
 
   // When the user clicks anywhere outside of the modal, close it
 
