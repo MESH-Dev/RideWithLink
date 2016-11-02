@@ -193,6 +193,20 @@ header {
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: background-color 0.5s ease;
+
+  a{
+   font-family: "Dosis", Helvetica, Arial, sans-serif;
+  color: white;
+  width: 200px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  border-radius: 10px 0 0 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
 }
 
 .ribbon-title:hover {

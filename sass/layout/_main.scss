@@ -70,3 +70,26 @@
   margin-bottom: 70px;
 
 }
+
+@media only screen and (min-width:540px){
+  .why{
+  background: url(http://ridewithlink.com/wp-content/themes/mesh/img/WhyLink_Blue_grey.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .where {
+    background: url(http://ridewithlink.com/wp-content/themes/mesh/img/LinkInYourCity_Yellow_grey.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+}
